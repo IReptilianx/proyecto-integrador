@@ -1,26 +1,26 @@
 {
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo", // Archivo de caché de compilación
+    "target": "ES2020", // Versión de JavaScript objetivo
+    "useDefineForClassFields": true, // Define campos de clase según la especificación
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Bibliotecas incluidas
+    "module": "ESNext", // Módulo objetivo
+    "skipLibCheck": true, // Omite la verificación de tipos en archivos de bibliotecas
 
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true,
-    "jsx": "react-jsx",
+    /* Configuración del módulo */
+    "moduleResolution": "bundler", // Resolución de módulos para bundlers como Vite
+    "allowImportingTsExtensions": true, // Permite importar extensiones .ts
+    "isolatedModules": true, // Asegura que cada archivo sea tratado como un módulo independiente
+    "moduleDetection": "force", // Fuerza la detección de módulos
+    "noEmit": true, // No genera archivos de salida
+    "jsx": "react-jsx", // Soporte para JSX en React
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    /* Configuración de linting */
+    "strict": true, // Activa todas las comprobaciones estrictas
+    "noUnusedLocals": true, // Marca variables locales no usadas como error
+    "noUnusedParameters": true, // Marca parámetros no usados como error
+    "noFallthroughCasesInSwitch": true, // Evita casos sin break en switch
+    "noUncheckedSideEffectImports": true // Marca importaciones con efectos secundarios no verificadas como error
   },
-  "include": ["src/**/*", "src/**/*.tsx", "src/**/*.ts"] // Incluye todos los archivos TypeScript y TSX
+  "include": ["src/**/*"] // Incluye todos los archivos en la carpeta src
 }
